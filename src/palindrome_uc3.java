@@ -1,0 +1,17 @@
+public class palindrome_uc3 {
+    public static void main(String[] args) {
+        System.out.println("UC3 - Palindrome Check Using String Reverse");
+        System.out.println("--------------------RA642--------------------");
+        String word = "malayalam";//Hardcoded string malayalam
+        String reversed = "";
+        for(int i = word.length() - 1; i >= 0; i--) {
+            reversed = reversed + word.charAt(i);
+        }
+        if(word.equals(reversed)) {
+            System.out.println(word + " is a Palindrome");
+        } else {
+            System.out.println(word + " is NOT a Palindrome");
+        }
+        System.out.println("Program Ended");
+    }
+}
